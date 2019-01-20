@@ -1,0 +1,5 @@
+RegisterServerEvent('ambu')
+AddEventHandler('ambu', function(param)
+  print('^1[^1AMBULANSE^1]^1:'.. param)
+  TriggerClientEvent('chatMessage', -1, '^1[^1AMBULANSE^1]^1', {0,0,0}, param)
+end)
